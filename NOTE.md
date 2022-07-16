@@ -315,3 +315,9 @@ public class CountingSort {
     使用ForkJoinPool达到并行执行的目的 
 
     数组大小 大于8192 同时处理器有多个核心 采用并行计算
+####   
+    Arrays.parallelSort()
+    并行排序-合并排序算法。它将数组分成子数组，这些子数组本身先进行排序然后合并。
+    使用ForkJoinPool达到并行执行的目的 
+
+    数组大小 大于8192 同时处理器有多个核心 采用并行计算
