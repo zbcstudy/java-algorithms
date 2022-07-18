@@ -1,8 +1,11 @@
 package com.zbc.algorithms.sort;
 
+import java.util.Arrays;
+
 /**
  * 选择排序
- *  什么数据进去都是 O(n²) 的时间复杂度
+ * 什么数据进去都是 O(n²) 的时间复杂度
+ *
  * @author aaron
  * @since 2022/7/15
  */
@@ -24,12 +27,13 @@ public class S2_SelectionSort {
             if (min != i) {
                 SortUtils.swap(arr, i, min);
             }
+            System.out.println("排序后：" + Arrays.toString(arr));
         }
         return arr;
     }
 
     public static void main(String[] args) {
-        Integer[] sort = sort(new Integer[]{2, 4, 55, 35, 67, 13, 9});
+        Integer[] sort = sort(new Integer[]{55, 2, 4, 35, 67, 13, 9});
         for (int i = 0; i < sort.length; i++) {
             System.out.println(sort[i]);
         }

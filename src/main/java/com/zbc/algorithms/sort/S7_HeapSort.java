@@ -1,5 +1,7 @@
 package com.zbc.algorithms.sort;
 
+import java.util.Arrays;
+
 /**
  * 堆排序
  *
@@ -24,6 +26,7 @@ public class S7_HeapSort {
             SortUtils.swap(arr, 0, i);
             len--;
             heapify(arr, 0, len);
+            System.out.println("堆排序后：" + Arrays.toString(arr));
         }
         return arr;
     }
@@ -54,12 +57,9 @@ public class S7_HeapSort {
     }
 
     public static void main(String[] args) {
-        System.out.println((double) 7 / 2);
         S7_HeapSort heapSort = new S7_HeapSort();
         Integer[] params = new Integer[]{4, 2, 55, 35, 67, 13, 9, 88, 17, 56, 1, 22};
         heapSort.sort(params); // size = 12
-        for (int i = 0; i < params.length; i++) {
-            System.out.println(params[i]);
-        }
+        System.out.println(Arrays.toString(params));
     }
 }
